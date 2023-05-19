@@ -61,12 +61,14 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="Seeds" />
+    <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Genre.sql" />
     <Build Include="Tables\Publisher.sql" />
     <Build Include="Tables\Game.sql" />
     <Build Include="Tables\Game_Genre.sql" />
+    <Build Include="Views\V_Game.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Demo_ADO.DB.refactorlog" />
