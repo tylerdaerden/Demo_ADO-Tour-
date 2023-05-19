@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{17d6e20f-6049-45b8-99e4-da881401991d}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -22,6 +22,9 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DelayedDurability>FORCED</DelayedDurability>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <Recovery>FULL</Recovery>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -70,5 +73,8 @@
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Seeds\InitialData.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Demo_ADO.DB.publish.xml" />
   </ItemGroup>
 </Project>
