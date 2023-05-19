@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="3b2de85a-9396-4871-9d8e-c996be550967" ChangeDateTime="05/19/2023 09:02:03">
+    <Property Name="ElementName" Value="[dbo].[Publisher].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Publisher]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Publisher" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="544f264a-6bd8-483c-89a7-95666dbf0519" ChangeDateTime="05/19/2023 09:06:13">
+    <Property Name="ElementName" Value="[dbo].[Publisher].[IX_Publisher_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[Publisher]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UK_Publisher__Name_Country]" />
+  </Operation>
+</Operations>
