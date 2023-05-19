@@ -1,11 +1,14 @@
-﻿using Microsoft.Data.SqlClient;
+﻿// ConnectionString
 
-// ConnectionString 
-string connectionString = @"Server=Forma500\TFTIC;Database=Demo_ADO;User Id=Della;Password=Test1234=;TrustServerCertificate=true;";
+using Microsoft.Data.SqlClient;
 
-// Nuget package à installer → Microsoft.Data.SqlClient
+string connectionString = "Server=TOURPCDANY\\DATAVIZ;Database=Demo_Ado;User Id=Zaza;Password=Test1234=;TrustServerCertificate=true;";
 
-#region Connnexion vers la DB
+// nugget package à installer -> Microsoft.Data.SqlClient
+
+
+#region Connexion vers la DB
+
 // - Instance d'une connexion + ConnectionString
 SqlConnection demoConnection = new SqlConnection();
 demoConnection.ConnectionString = connectionString;
@@ -13,8 +16,9 @@ demoConnection.ConnectionString = connectionString;
 // - Ouvrir la connexion
 demoConnection.Open();
 
-// - Réaliser du traitement...
+// - Réaliser du traitement ...
 Console.WriteLine($"Etat de la connexion {demoConnection.State}");
+
 
 // - Exemple de requete
 SqlCommand demoCommand = demoConnection.CreateCommand();
@@ -25,7 +29,11 @@ int nbGame = (int)demoCommand.ExecuteScalar();
 Console.WriteLine($"Le nombre de jeu dans la DB : {nbGame}");
 
 
-// - Fermer la connexion
+// - Fermer  la connexion
 demoConnection.Close();
 Console.WriteLine($"Etat de la connexion {demoConnection.State}");
+
+
 #endregion
+
+
